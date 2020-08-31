@@ -1,0 +1,991 @@
++ SECONDS=0
++++ readlink -f ./compile_cmake.sh
+++ dirname /home/tester/ufs-weather-model/tests/compile_cmake.sh
++ readonly MYDIR=/home/tester/ufs-weather-model/tests
++ MYDIR=/home/tester/ufs-weather-model/tests
++ readonly ARGC=4
++ ARGC=4
++ [[ 4 -lt 2 ]]
++ PATHTR=/home/tester/ufs-weather-model
++ MACHINE_ID=linux.gnu
++ MAKE_OPT='CCPP=Y SUITES=FV3_GFS_2017'
++ BUILD_NAME=fv3_std
++ clean_before=YES
++ clean_after=YES
+++ pwd
++ BUILD_DIR=/home/tester/ufs-weather-model/tests/build_fv3_std
++ [[ linux.gnu == cheyenne.* ]]
++ [[ linux.gnu == wcoss_dell_p3 ]]
++ MAKE_THREADS=8
++ hostname
+c8fd5ee400c5
++ set +x
+Platform: Ubuntu Linux
+Setting environment variables for NEMSfv3gfs on Linux with gcc/gfortran
++ echo 'Compiling CCPP=Y SUITES=FV3_GFS_2017 into fv3_std.exe on linux.gnu'
+Compiling CCPP=Y SUITES=FV3_GFS_2017 into fv3_std.exe on linux.gnu
++ '[' YES = YES ']'
++ rm -rf /home/tester/ufs-weather-model/tests/build_fv3_std
++ mkdir -p /home/tester/ufs-weather-model/tests/build_fv3_std
++ CCPP_CMAKE_FLAGS=-DNETCDF_DIR=/usr/local
++ [[ CCPP=Y SUITES=FV3_GFS_2017 == *\D\E\B\U\G\=\Y* ]]
++ [[ CCPP=Y SUITES=FV3_GFS_2017 == *\R\E\P\R\O\=\Y* ]]
++ [[ CCPP=Y SUITES=FV3_GFS_2017 == *\3\2\B\I\T\=\Y* ]]
++ [[ CCPP=Y SUITES=FV3_GFS_2017 == *\O\P\E\N\M\P\=\N* ]]
++ [[ CCPP=Y SUITES=FV3_GFS_2017 == *\M\U\L\T\I\_\G\A\S\E\S\=\Y* ]]
++ CCPP_CMAKE_FLAGS='-DNETCDF_DIR=/usr/local -DMULTI_GASES=OFF'
++ [[ CCPP=Y SUITES=FV3_GFS_2017 == *\C\C\P\P\=\Y* ]]
++ mkdir -p /home/tester/ufs-weather-model/FV3/ccpp/include
++ CCPP_CMAKE_FLAGS='-DNETCDF_DIR=/usr/local -DMULTI_GASES=OFF -DCCPP=ON -DMPI=ON'
++ [[ CCPP=Y SUITES=FV3_GFS_2017 == *\D\E\B\U\G\=\Y* ]]
++ [[ CCPP=Y SUITES=FV3_GFS_2017 == *\R\E\P\R\O\=\Y* ]]
++ CCPP_CMAKE_FLAGS='-DNETCDF_DIR=/usr/local -DMULTI_GASES=OFF -DCCPP=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Release'
++ [[ linux.gnu == \j\e\t\.\i\n\t\e\l ]]
++ [[ CCPP=Y SUITES=FV3_GFS_2017 == *\3\2\B\I\T\=\Y* ]]
++ CCPP_CMAKE_FLAGS='-DNETCDF_DIR=/usr/local -DMULTI_GASES=OFF -DCCPP=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Release -DDYN32=OFF'
++ set +ex
+Compiling suites FV3_GFS_2017
++ [[ CCPP=Y SUITES=FV3_GFS_2017 == *\W\W\3\=\Y* ]]
+++ trim '-DNETCDF_DIR=/usr/local -DMULTI_GASES=OFF -DCCPP=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Release -DDYN32=OFF -DCCPP_SUITES=FV3_GFS_2017'
+++ local 'var=-DNETCDF_DIR=/usr/local -DMULTI_GASES=OFF -DCCPP=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Release -DDYN32=OFF -DCCPP_SUITES=FV3_GFS_2017'
+++ var='-DNETCDF_DIR=/usr/local -DMULTI_GASES=OFF -DCCPP=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Release -DDYN32=OFF -DCCPP_SUITES=FV3_GFS_2017'
+++ var='-DNETCDF_DIR=/usr/local -DMULTI_GASES=OFF -DCCPP=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Release -DDYN32=OFF -DCCPP_SUITES=FV3_GFS_2017'
+++ echo -n '-DNETCDF_DIR=/usr/local -DMULTI_GASES=OFF -DCCPP=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Release -DDYN32=OFF -DCCPP_SUITES=FV3_GFS_2017'
++ CCPP_CMAKE_FLAGS='-DNETCDF_DIR=/usr/local -DMULTI_GASES=OFF -DCCPP=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Release -DDYN32=OFF -DCCPP_SUITES=FV3_GFS_2017'
++ cd /home/tester/ufs-weather-model/tests/build_fv3_std
++ cmake /home/tester/ufs-weather-model -DNETCDF_DIR=/usr/local -DMULTI_GASES=OFF -DCCPP=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Release -DDYN32=OFF -DCCPP_SUITES=FV3_GFS_2017
+-- The C compiler identification is GNU 9.3.0
+-- The CXX compiler identification is GNU 9.3.0
+-- The Fortran compiler identification is GNU 9.3.0
+-- Check for working C compiler: /usr/bin/mpicc
+-- Check for working C compiler: /usr/bin/mpicc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/mpicxx
+-- Check for working CXX compiler: /usr/bin/mpicxx -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Check for working Fortran compiler: /usr/bin/mpif90
+-- Check for working Fortran compiler: /usr/bin/mpif90  -- works
+-- Detecting Fortran compiler ABI info
+-- Detecting Fortran compiler ABI info - done
+-- Checking whether /usr/bin/mpif90 supports Fortran 90
+-- Checking whether /usr/bin/mpif90 supports Fortran 90 -- yes
+
+Platform 'linux.gnu' configuration file does not exist
+
+32BIT ............ OFF
+AVX2 ............. ON
+SIMDMULTIARCH      OFF
+CCPP ............. ON
+DEBUG ............ OFF
+INLINE_POST ...... OFF
+MULTI_GASES ...... OFF
+OPENMP ........... ON
+PARALLEL_NETCDF .. OFF
+QUAD_PRECISION ... ON
+REPRO ............ OFF
+WW3 .............. OFF
+
+C       compiler: GNU 9.3.0 (mpicc)
+CXX     compiler: GNU 9.3.0 (mpicxx)
+Fortran compiler: GNU 9.3.0 (mpif90)
+
+
+-- Found NetCDF: /usr/local/include (found version "4.7.4") found components: C Fortran 
+-- FindNetCDF defines targets:
+--   - NetCDF_VERSION [4.7.4]
+--   - NetCDF_PARALLEL [FALSE]
+--   - NetCDF_C_CONFIG_EXECUTABLE [/usr/local/bin/nc-config]
+--   - NetCDF::NetCDF_C [STATIC] [Root: /usr/local] Lib: /usr/local/lib/libnetcdf.a 
+--   - NetCDF_Fortran_CONFIG_EXECUTABLE [/usr/local/bin/nf-config]
+--   - NetCDF::NetCDF_Fortran [STATIC] [Root: /usr/local] Lib: /usr/local/lib/libnetcdff.a 
+-- Found MPI_C: /usr/bin/mpicc (found version "3.1") 
+-- Found MPI_CXX: /usr/bin/mpicxx (found version "3.1") 
+-- Found MPI_Fortran: /usr/bin/mpif90 (found version "3.1") 
+-- Found MPI: TRUE (found version "3.1")  
+-- Found ESMF library: /usr/local/lib/libesmf.a
+-- Found bacio: /usr/local/NCEPlibs/bacio-2.4.0/lib/libbacio_4.a (found version "2.4.0")
+-- Found bacio: /usr/local/NCEPlibs/bacio-2.4.0/lib/libbacio_4.a (found version "2.4.0")
+-- Found w3nco: /usr/local/NCEPlibs/w3nco-2.4.0/lib/libw3nco_4.a (found version "2.4.0")
+-- Found MPI: TRUE (found version "3.1") found components: Fortran 
+-- Found nemsio: /usr/local/NCEPlibs/nemsio-2.5.1/lib/libnemsio.a (found version "2.5.1")
+-- Found sp: /usr/local/NCEPlibs/sp-2.3.0/lib/libsp_4.a (found version "2.3.0")
+-- Found bacio: /usr/local/NCEPlibs/bacio-2.4.0/lib/libbacio_4.a (found version "2.4.0")
+-- Found w3nco: /usr/local/NCEPlibs/w3nco-2.4.0/lib/libw3nco_4.a (found version "2.4.0")
+-- Found nemsio: /usr/local/NCEPlibs/nemsio-2.5.1/lib/libnemsio.a (found version "2.5.1")
+-- Found sigio: /usr/local/NCEPlibs/sigio-2.3.0/lib/libsigio.a (found version "2.3.0")
+-- Found w3emc: /usr/local/NCEPlibs/w3emc-2.7.0/lib/libw3emc_4.a (found version "2.7.0")
+-- Found w3nco: /usr/local/NCEPlibs/w3nco-2.4.0/lib/libw3nco_4.a (found version "2.4.0")
+Found Python: /usr/bin/python2.7
+Calling CCPP code generator (ccpp_prebuild.py) for SUITES = FV3_GFS_2017
+
+-- Detecting OpenMP flags for GNU C compiler: -fopenmp
+-- Detecting OpenMP flags for GNU C++ compiler: -fopenmp
+-- Detecting OpenMP flags for GNU Fortran compiler: -fopenmp
+-- Enable OpenMP support for C/C++/Fortran compiler
+-- Disable SIONlib support
+-- Disable Intel MKL support
+-- Enable netCDF support
+-- Disable ESMF support
+-- Disable multi-gases physics
+-- Detecting OpenMP flags for GNU C compiler: -fopenmp
+-- Detecting OpenMP flags for GNU C++ compiler: -fopenmp
+-- Detecting OpenMP flags for GNU Fortran compiler: -fopenmp
+-- Enable OpenMP support for C/C++/Fortran compiler
+-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+-- Detecting OpenMP flags for GNU C compiler: -fopenmp
+-- Detecting OpenMP flags for GNU C++ compiler: -fopenmp
+-- Detecting OpenMP flags for GNU Fortran compiler: -fopenmp
+-- Enable OpenMP support for C/C++/Fortran compiler
+-- Got CCPP TYPEDEFS from environment variable: gfs_typedefs.mod;mo_cloud_optics.mod;mo_optical_props.mod;ccpp_typedefs.mod;mo_gas_concentrations.mod;machine.mod;mo_source_functions.mod;module_radlw_parameters.mod;module_radsw_parameters.mod;mo_gas_optics_rrtmgp.mod
+-- Got CCPP SCHEMES from environment variable: /home/tester/ufs-weather-model/FV3/ccpp/physics/physics/GFDL_parse_tracers.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/aer_cloud.F;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/aerclm_def.F;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/aerinterp.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/calpreciptype.f90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/cldwat2m_micro.F;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/cldmacro.F;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/date_def.f;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/funcphys.f90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/gcycle.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/gfs_phy_tracer_config.F;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/gocart_tracer_config_stub.f;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/h2o_def.f;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/h2ointerp.f90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/iccn_def.F;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/iccninterp.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/iounitdef.f;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/machine.F;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/mersenne_twister.f;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/mfpbl.f;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/micro_mg_utils.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/micro_mg2_0.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/micro_mg3_0.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/module_bfmicrophysics.f;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/multi_gases.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/module_gfdl_cloud_microphys.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/module_nst_model.f90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/module_nst_parameters.f90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/module_nst_water_prop.f90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/module_mp_radar.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/module_mp_thompson.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/module_mp_thompson_make_number_concentrations.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/module_MP_FER_HIRES.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/module_bl_mynn.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/module_sf_mynn.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/module_SF_JSFC.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/module_BL_MYJPBL.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/module_sf_noahmp_glacier.f90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/module_sf_noahmplsm.f90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/cires_ugwp_module.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/ugwp_driver_v0.F;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/cires_ugwp_triggers.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/cires_ugwp_initialize.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/cires_ugwp_solvers.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/cires_ugwp_utils.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/cires_orowam2017.f;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/cires_vert_lsatdis.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/cires_vert_orodis.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/cires_vert_wmsdis.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/namelist_soilveg.f;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/mfpblt.f;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/mfpbltq.f;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/mfscu.f;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/mfscuq.f;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/noahmp_tables.f90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/num_parthds.F;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/ozne_def.f;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/ozinterp.f90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/physcons.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/physparam.f;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/radcons.f90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/radiation_aerosols.f;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/radiation_astronomy.f;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/radiation_clouds.f;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/radiation_gases.f;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/radiation_surface.f;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/radlw_datatb.f;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/radlw_param.f;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/radsw_datatb.f;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/radsw_param.f;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/samfaerosols.F;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/sfcsub.F;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/sflx.f;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/set_soilveg.f;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/flake.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/surface_perturbation.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/cu_gf_deep.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/cu_gf_sh.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/tridi.f;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/wv_saturation.F;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/module_sf_ruclsm.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/namelist_soilveg_ruc.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/set_soilveg_ruc.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/module_soil_pre.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/rte-rrtmgp/rrtmgp/mo_gas_concentrations.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/rte-rrtmgp/rrtmgp/mo_gas_optics.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/rte-rrtmgp/rrtmgp/mo_gas_optics_rrtmgp.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/rte-rrtmgp/rrtmgp/mo_rrtmgp_constants.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/rte-rrtmgp/rrtmgp/mo_rrtmgp_util_reorder.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/rte-rrtmgp/rrtmgp/mo_rrtmgp_util_string.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/rte-rrtmgp/rrtmgp/kernels/mo_gas_optics_kernels.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/rte-rrtmgp/rrtmgp/kernels/mo_rrtmgp_util_reorder_kernels.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/rte-rrtmgp/rte/mo_fluxes.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/rte-rrtmgp/rte/mo_rte_util_array.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/rte-rrtmgp/rte/mo_optical_props.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/rte-rrtmgp/rte/mo_rte_kind.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/rte-rrtmgp/rte/mo_rte_lw.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/rte-rrtmgp/rte/mo_rte_sw.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/rte-rrtmgp/rte/mo_rte_config.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/rte-rrtmgp/rte/mo_source_functions.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/rte-rrtmgp/rte/kernels/mo_fluxes_broadband_kernels.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/rte-rrtmgp/rte/kernels/mo_optical_props_kernels.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/rte-rrtmgp/rte/kernels/mo_rte_solver_kernels.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/rte-rrtmgp/extensions/mo_compute_bc.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/rte-rrtmgp/extensions/mo_fluxes_byband.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/rte-rrtmgp/extensions/mo_fluxes_byband_kernels.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/rte-rrtmgp/extensions/mo_fluxes_bygpoint.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/rte-rrtmgp/extensions/mo_heating_rates.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/rte-rrtmgp/extensions/mo_rrtmgp_clr_all_sky.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/rte-rrtmgp/extensions/cloud_optics/mo_cloud_optics.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/rrtmg_lw_cloud_optics.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/rrtmg_sw_cloud_optics.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/rrtmgp_aux.F90;/home/tester/ufs-weather-model/FV3/gfsphysics/GFS_layer/GFS_typedefs.F90;/home/tester/ufs-weather-model/FV3/gfsphysics/CCPP_layer/CCPP_typedefs.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/GFS_DCNV_generic.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/GFS_GWD_generic.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/GFS_MP_generic.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/GFS_PBL_generic.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/GFS_SCNV_generic.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/GFS_debug.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/GFS_phys_time_vary.fv3.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/GFS_rad_time_vary.fv3.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/GFS_rrtmg_post.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/GFS_rrtmg_pre.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/GFS_rrtmg_setup.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/GFS_stochastics.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/GFS_suite_interstitial.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/GFS_surface_generic.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/GFS_surface_composites.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/GFS_surface_loop_control.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/GFS_time_vary_pre.fv3.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/cires_ugwp.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/cires_ugwp_post.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/cnvc90.f;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/cs_conv.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/cs_conv_aw_adj.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/cu_ntiedtke_pre.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/cu_ntiedtke.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/cu_ntiedtke_post.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/dcyc2.f;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/drag_suite.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/gcm_shoc.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/get_prs_fv3.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/gfdl_cloud_microphys.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/gfdl_fv_sat_adj.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/gscond.f;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/gwdc.f;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/gwdps.f;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/h2ophys.f;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/samfdeepcnv.f;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/samfshalcnv.f;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/sascnvn.F;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/shalcnv.F;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/maximum_hourly_diagnostics.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/m_micro.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/m_micro_interstitial.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/cu_gf_driver_pre.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/cu_gf_driver.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/cu_gf_driver_post.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/moninedmf.f;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/moninedmf_hafs.f;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/moninshoc.f;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/satmedmfvdif.F;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/satmedmfvdifq.F;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/shinhongvdif.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/ysuvdif.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/module_MYNNPBL_wrapper.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/module_MYNNSFC_wrapper.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/module_SGSCloud_RadPre.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/module_SGSCloud_RadPost.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/module_MYJSFC_wrapper.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/module_MYJPBL_wrapper.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/mp_thompson_pre.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/mp_thompson.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/mp_thompson_post.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/ozphys.f;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/ozphys_2015.f;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/precpd.f;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/phys_tend.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/radlw_main.f;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/radsw_main.f;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/rascnv.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/rayleigh_damp.f;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/rrtmg_lw_post.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/rrtmg_lw_pre.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/rrtmg_sw_post.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/rrtmg_sw_pre.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/sfc_diag.f;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/sfc_diag_post.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/sfc_drv_ruc.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/lsm_ruc_sfc_sice_interstitial.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/sfc_cice.f;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/sfc_diff.f;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/sfc_drv.f;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/sfc_noahmp_drv.f;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/flake_driver.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/sfc_nst.f;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/sfc_ocean.F;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/sfc_sice.f;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/mp_fer_hires.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/rrtmgp_lw_gas_optics.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/rrtmgp_lw_cloud_optics.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/rrtmgp_sw_gas_optics.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/rrtmgp_sw_cloud_optics.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/rrtmgp_sw_aerosol_optics.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/rrtmgp_lw_rte.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/rrtmgp_sw_rte.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/rrtmgp_lw_aerosol_optics.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/GFS_rrtmgp_setup.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/GFS_rrtmgp_pre.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/rrtmgp_lw_pre.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/GFS_rrtmgp_sw_pre.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/GFS_rrtmgp_lw_post.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/rrtmgp_lw_cloud_sampling.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/rrtmgp_sw_cloud_sampling.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/GFS_cloud_diagnostics.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/mo_cloud_sampling.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/GFS_rrtmgp_gfdlmp_pre.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/GFS_rrtmgp_zhaocarr_pre.F90;/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/GFS_rrtmgp_sw_post.F90
+-- Got CCPP CAPS from environment variable: /home/tester/ufs-weather-model/tests/build_fv3_std/FV3/ccpp/physics/ccpp_FV3_GFS_2017_cap.F90;/home/tester/ufs-weather-model/tests/build_fv3_std/FV3/ccpp/physics/ccpp_FV3_GFS_2017_time_vary_cap.F90;/home/tester/ufs-weather-model/tests/build_fv3_std/FV3/ccpp/physics/ccpp_FV3_GFS_2017_radiation_cap.F90;/home/tester/ufs-weather-model/tests/build_fv3_std/FV3/ccpp/physics/ccpp_FV3_GFS_2017_physics_cap.F90;/home/tester/ufs-weather-model/tests/build_fv3_std/FV3/ccpp/physics/ccpp_FV3_GFS_2017_stochastics_cap.F90
+Force 64 bits in CCPP_layer
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/tester/ufs-weather-model/tests/build_fv3_std
++ make -j 8
+Scanning dependencies of target ccpp
+Scanning dependencies of target cpl
+[  0%] Building Fortran object FV3/ccpp/framework/src/CMakeFiles/ccpp.dir/ccpp_types.F90.o
+[  0%] Building Fortran object FV3/cpl/CMakeFiles/cpl.dir/module_cap_cpl.F90.o
+[  0%] Building Fortran object FV3/cpl/CMakeFiles/cpl.dir/module_cplfields.F90.o
+[  0%] Building Fortran object FV3/ccpp/framework/src/CMakeFiles/ccpp.dir/ccpp_api.F90.o
+Scanning dependencies of target fms
+[  0%] Building Fortran object CMakeFiles/fms.dir/FMS/drifters/cloud_interpolator.F90.o
+[  0%] Building Fortran object CMakeFiles/fms.dir/FMS/mpp/mpp_parameter.F90.o
+[  1%] Building Fortran object CMakeFiles/fms.dir/FMS/drifters/drifters_core.F90.o
+[  1%] Building Fortran object CMakeFiles/fms.dir/FMS/platform/platform.F90.o
+[  1%] Building Fortran object CMakeFiles/fms.dir/FMS/drifters/drifters_input.F90.o
+[  2%] Linking Fortran static library libccpp.a
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[  3%] Building Fortran object CMakeFiles/fms.dir/FMS/monin_obukhov/monin_obukhov_kernel.F90.o
+[  3%] Building Fortran object CMakeFiles/fms.dir/FMS/drifters/drifters_io.F90.o
+[  3%] Built target ccpp
+[  4%] Building Fortran object CMakeFiles/fms.dir/FMS/random_numbers/MersenneTwister.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[  4%] Building Fortran object CMakeFiles/fms.dir/FMS/sat_vapor_pres/sat_vapor_pres_k.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[  4%] Building Fortran object CMakeFiles/fms.dir/FMS/tridiagonal/tridiagonal.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+Scanning dependencies of target ccppphys
+[  4%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/machine.F.o
+[  4%] Building Fortran object CMakeFiles/fms.dir/FMS/drifters/quicksort.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[  4%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/mersenne_twister.f.o
+[  4%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/rte-rrtmgp/rte/mo_rte_kind.F90.o
+[  5%] Building C object CMakeFiles/fms.dir/FMS/memutils/memuse.c.o
+[  5%] Building C object CMakeFiles/fms.dir/FMS/mosaic/create_xgrid.c.o
+[  6%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/rte-rrtmgp/rrtmgp/mo_rrtmgp_util_string.F90.o
+[  6%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/GFDL_parse_tracers.F90.o
+[  6%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/namelist_soilveg.f.o
+[  6%] Building C object CMakeFiles/fms.dir/FMS/mosaic/gradient_c2l.c.o
+[  6%] Building C object CMakeFiles/fms.dir/FMS/mosaic/interp.c.o
+[  7%] Building C object CMakeFiles/fms.dir/FMS/mosaic/mosaic_util.c.o
+[  7%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/iounitdef.f.o
+[  7%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/module_mp_radar.F90.o
+[  7%] Linking Fortran static library libcpl.a
+[  7%] Building C object CMakeFiles/fms.dir/FMS/mosaic/read_mosaic.c.o
+[  7%] Built target cpl
+[  7%] Building C object CMakeFiles/fms.dir/FMS/mpp/nsclock.c.o
+[  7%] Building C object CMakeFiles/fms.dir/FMS/mpp/threadloc.c.o
+[  7%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/module_sf_noahmp_glacier.f90.o
+[  7%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/module_sf_noahmplsm.f90.o
+[  7%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/namelist_soilveg_ruc.F90.o
+[  7%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/module_soil_pre.F90.o
+/home/tester/ufs-weather-model/FMS/mosaic/read_mosaic.c: In function 'read_mosaic_grid_data':
+/home/tester/ufs-weather-model/FMS/mosaic/read_mosaic.c:837:29: warning: '%s' directive writing up to 254 bytes into a region of size between 0 and 254 [-Wformat-overflow=]
+  837 |       sprintf(tilefile, "%s/%s", dir, gridfile);
+      |                             ^~        ~~~~~~~~
+In file included from /usr/include/stdio.h:867,
+                 from /home/tester/ufs-weather-model/FMS/mosaic/read_mosaic.c:20:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:36:10: note: '__builtin___sprintf_chk' output between 2 and 510 bytes into a destination of size 255
+   36 |   return __builtin___sprintf_chk (__s, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   37 |       __bos (__s), __fmt, __va_arg_pack ());
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[  8%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/noahmp_tables.f90.o
+[  8%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/gocart_tracer_config_stub.f.o
+[  8%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/num_parthds.F.o
+[  8%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/rte-rrtmgp/rrtmgp/kernels/mo_gas_optics_kernels.F90.o
+[  8%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/rte-rrtmgp/rrtmgp/kernels/mo_rrtmgp_util_reorder_kernels.F90.o
+[  8%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/rte-rrtmgp/rrtmgp/mo_rrtmgp_constants.F90.o
+[  8%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/physparam.f.o
+[  9%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/physcons.F90.o
+[  9%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/gwdps.f.o
+[ 10%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/cires_ugwp_post.F90.o
+[ 10%] Building Fortran object CMakeFiles/fms.dir/FMS/constants/constants.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 10%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/cnvc90.f.o
+[ 11%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/GFS_DCNV_generic.F90.o
+[ 12%] Building Fortran object CMakeFiles/fms.dir/FMS/mpp/mpp_data.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 12%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/GFS_GWD_generic.F90.o
+[ 12%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/GFS_MP_generic.F90.o
+[ 12%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/GFS_PBL_generic.F90.o
+[ 12%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/GFS_SCNV_generic.F90.o
+[ 13%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/GFS_surface_composites.F90.o
+[ 13%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/surface_perturbation.F90.o
+[ 13%] Building Fortran object CMakeFiles/fms.dir/FMS/mpp/mpp.F90.o
+[ 13%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/GFS_surface_loop_control.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 13%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/maximum_hourly_diagnostics.F90.o
+[ 13%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/ozphys.f.o
+[ 13%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/rayleigh_damp.f.o
+[ 13%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/sfc_diag_post.F90.o
+[ 13%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/sfc_diff.f.o
+[ 13%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/date_def.f.o
+[ 13%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/aerclm_def.F.o
+[ 13%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/ozne_def.f.o
+[ 13%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/radcons.f90.o
+[ 13%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/GFS_stochastics.F90.o
+[ 13%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/h2o_def.f.o
+[ 14%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/iccn_def.F.o
+[ 14%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/rrtmgp_aux.F90.o
+[ 14%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/rte-rrtmgp/rte/kernels/mo_fluxes_broadband_kernels.F90.o
+[ 14%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/rte-rrtmgp/extensions/mo_fluxes_byband_kernels.F90.o
+[ 14%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/cs_conv_aw_adj.F90.o
+[ 15%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/cu_gf_driver_post.F90.o
+[ 16%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/cu_gf_deep.F90.o
+[ 16%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/cu_gf_driver_pre.F90.o
+[ 16%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/cu_ntiedtke_post.F90.o
+[ 17%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/cu_ntiedtke_pre.F90.o
+[ 17%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/drag_suite.F90.o
+[ 17%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/flake.F90.o
+[ 17%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/module_gfdl_cloud_microphys.F90.o
+[ 18%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/gfs_phy_tracer_config.F.o
+[ 18%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/gwdc.f.o
+[ 18%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/h2ophys.f.o
+[ 18%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/lsm_ruc_sfc_sice_interstitial.F90.o
+[ 18%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/micro_mg_utils.F90.o
+[ 18%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/m_micro_interstitial.F90.o
+[ 19%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/module_BL_MYJPBL.F90.o
+[ 20%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/module_MP_FER_HIRES.F90.o
+[ 20%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/module_SF_JSFC.F90.o
+[ 20%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/module_SGSCloud_RadPost.F90.o
+[ 20%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/mp_thompson_post.F90.o
+[ 20%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/mp_thompson_pre.F90.o
+[ 21%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/phys_tend.F90.o
+[ 21%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/ozphys_2015.f.o
+[ 22%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/rte-rrtmgp/rte/kernels/mo_rte_solver_kernels.F90.o
+[ 22%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/set_soilveg_ruc.F90.o
+[ 22%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/sfc_cice.f.o
+[ 22%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/shinhongvdif.F90.o
+[ 22%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/sfcsub.F.o
+[ 22%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/ysuvdif.F90.o
+[ 22%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/tridi.f.o
+[ 22%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/__/__/gfsphysics/CCPP_layer/CCPP_typedefs.F90.o
+[ 22%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/rte-rrtmgp/rte/kernels/mo_optical_props_kernels.F90.o
+[ 23%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/rte-rrtmgp/rte/mo_rte_util_array.F90.o
+[ 24%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/rte-rrtmgp/rte/mo_rte_config.F90.o
+[ 24%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/dcyc2.f.o
+[ 24%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/get_prs_fv3.F90.o
+[ 24%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/module_mp_thompson_make_number_concentrations.F90.o
+[ 24%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/funcphys.f90.o
+[ 24%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/set_soilveg.f.o
+[ 24%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/samfaerosols.F.o
+[ 24%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/module_nst_parameters.f90.o
+[ 24%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/module_mp_thompson.F90.o
+[ 24%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/radiation_astronomy.f.o
+[ 24%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/radiation_surface.f.o
+[ 24%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/aerinterp.F90.o
+[ 24%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/ozinterp.f90.o
+[ 25%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/GFS_cloud_diagnostics.F90.o
+[ 26%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/aer_cloud.F.o
+[ 26%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/cu_ntiedtke.F90.o
+[ 26%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/module_bl_mynn.F90.o
+[ 26%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/module_sf_mynn.F90.o
+/home/tester/ufs-weather-model/FV3/ccpp/physics/physics/module_bl_mynn.F90:3135:19:
+
+ 3135 |           &       + diss_heat(k)*delt*dheat_opt + &
+      |                   1
+Warning: Extension: Unary operator following arithmetic operator (use parentheses) at (1)
+[ 27%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/module_sf_ruclsm.F90.o
+[ 27%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/mp_fer_hires.F90.o
+[ 27%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/multi_gases.F90.o
+[ 27%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/rrtmg_lw_cloud_optics.F90.o
+[ 28%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/rrtmg_sw_cloud_optics.F90.o
+[ 29%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/mfpbl.f.o
+[ 30%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/sflx.f.o
+[ 30%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/rte-rrtmgp/rrtmgp/mo_rrtmgp_util_reorder.F90.o
+[ 30%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/radsw_param.f.o
+[ 31%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/radlw_param.f.o
+[ 31%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/cires_ugwp_initialize.F90.o
+[ 31%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/GFS_surface_generic.F90.o
+[ 31%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/sfc_diag.f.o
+[ 32%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/sfc_sice.f.o
+[ 33%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/gscond.f.o
+[ 33%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/precpd.f.o
+[ 34%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/module_bfmicrophysics.f.o
+[ 34%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/radiation_gases.f.o
+[ 34%] Building Fortran object CMakeFiles/fms.dir/FMS/mpp/mpp_efp.F90.o
+[ 34%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/h2ointerp.f90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 35%] Building Fortran object CMakeFiles/fms.dir/FMS/mpp/mpp_memutils.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 35%] Building Fortran object CMakeFiles/fms.dir/FMS/mpp/mpp_pset.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 35%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/iccninterp.F90.o
+[ 36%] Building Fortran object CMakeFiles/fms.dir/FMS/horiz_interp/horiz_interp_type.F90.o
+[ 36%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/GFS_time_vary_pre.fv3.F90.o
+[ 36%] Building Fortran object CMakeFiles/fms.dir/FMS/mosaic/gradient.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 36%] Building Fortran object CMakeFiles/fms.dir/FMS/fft/fft99.F90.o
+[ 36%] Building Fortran object CMakeFiles/fms.dir/FMS/mpp/mpp_utilities.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 37%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/rte-rrtmgp/extensions/mo_heating_rates.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 37%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/wv_saturation.F.o
+[ 37%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/cs_conv.F90.o
+[ 37%] Building Fortran object CMakeFiles/fms.dir/FMS/mpp/mpp_domains.F90.o
+[ 37%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/flake_driver.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 38%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/gcm_shoc.F90.o
+/home/tester/ufs-weather-model/FMS/mpp/include/mpp_update_nest_domains.h:545:0:
+
+  545 | #endif VECTOR_FIELD_
+      | 
+Warning: extra tokens at end of #endif directive
+/home/tester/ufs-weather-model/FMS/mpp/include/mpp_update_nest_domains.h:951:0:
+
+  951 | #endif VECTOR_FIELD_
+      | 
+Warning: extra tokens at end of #endif directive
+/home/tester/ufs-weather-model/FMS/mpp/include/mpp_update_nest_domains.h:545:0:
+
+  545 | #endif VECTOR_FIELD_
+      | 
+Warning: extra tokens at end of #endif directive
+/home/tester/ufs-weather-model/FMS/mpp/include/mpp_update_nest_domains.h:951:0:
+
+  951 | #endif VECTOR_FIELD_
+      | 
+Warning: extra tokens at end of #endif directive
+/home/tester/ufs-weather-model/FMS/mpp/include/mpp_update_nest_domains.h:545:0:
+
+  545 | #endif VECTOR_FIELD_
+      | 
+Warning: extra tokens at end of #endif directive
+/home/tester/ufs-weather-model/FMS/mpp/include/mpp_update_nest_domains.h:951:0:
+
+  951 | #endif VECTOR_FIELD_
+      | 
+Warning: extra tokens at end of #endif directive
+/home/tester/ufs-weather-model/FMS/mpp/include/mpp_do_update_nest.h:675:0:
+
+  675 | #endif   !VECTOR_FIELD_
+      | 
+Warning: extra tokens at end of #endif directive
+/home/tester/ufs-weather-model/FMS/mpp/include/mpp_do_update_nest.h:1159:0:
+
+ 1159 | #endif   !VECTOR_FIELD_
+      | 
+Warning: extra tokens at end of #endif directive
+/home/tester/ufs-weather-model/FMS/mpp/include/mpp_do_update_nest.h:675:0:
+
+  675 | #endif   !VECTOR_FIELD_
+      | 
+Warning: extra tokens at end of #endif directive
+/home/tester/ufs-weather-model/FMS/mpp/include/mpp_do_update_nest.h:1159:0:
+
+ 1159 | #endif   !VECTOR_FIELD_
+      | 
+Warning: extra tokens at end of #endif directive
+/home/tester/ufs-weather-model/FMS/mpp/include/mpp_do_update_nest.h:675:0:
+
+  675 | #endif   !VECTOR_FIELD_
+      | 
+Warning: extra tokens at end of #endif directive
+/home/tester/ufs-weather-model/FMS/mpp/include/mpp_do_update_nest.h:1159:0:
+
+ 1159 | #endif   !VECTOR_FIELD_
+      | 
+Warning: extra tokens at end of #endif directive
+[ 38%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/gfdl_cloud_microphys.F90.o
+[ 38%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/gfdl_fv_sat_adj.F90.o
+[ 39%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/module_MYJPBL_wrapper.F90.o
+[ 39%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/module_MYJSFC_wrapper.F90.o
+[ 39%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/moninshoc.f.o
+[ 39%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/moninedmf_hafs.f.o
+[ 39%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/rascnv.F90.o
+[ 39%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/satmedmfvdif.F.o
+[ 39%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/sascnvn.F.o
+[ 40%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/satmedmfvdifq.F.o
+[ 41%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/sfc_drv_ruc.F90.o
+[ 41%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/sfc_noahmp_drv.f.o
+[ 41%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/sfc_ocean.F.o
+[ 41%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/shalcnv.F.o
+[ 41%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/calpreciptype.f90.o
+[ 42%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/mfpblt.f.o
+[ 42%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/mfpbltq.f.o
+[ 42%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/mfscu.f.o
+[ 42%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/mfscuq.f.o
+[ 42%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/rte-rrtmgp/rte/mo_optical_props.F90.o
+[ 42%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/rte-rrtmgp/rrtmgp/mo_gas_concentrations.F90.o
+[ 42%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/moninedmf.f.o
+[ 43%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/sfc_drv.f.o
+[ 43%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/samfdeepcnv.f.o
+[ 44%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/samfshalcnv.f.o
+[ 45%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/module_nst_water_prop.f90.o
+[ 45%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/radiation_aerosols.f.o
+[ 45%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/radlw_datatb.f.o
+[ 45%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/radsw_datatb.f.o
+[ 45%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/cu_gf_sh.F90.o
+[ 45%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/micro_mg2_0.F90.o
+[ 45%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/micro_mg3_0.F90.o
+[ 45%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/module_MYNNPBL_wrapper.F90.o
+[ 46%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/module_MYNNSFC_wrapper.F90.o
+[ 46%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/mp_thompson.F90.o
+[ 47%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/cires_ugwp_triggers.F90.o
+[ 47%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/cires_ugwp_utils.F90.o
+[ 48%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/cires_orowam2017.f.o
+[ 48%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/rte-rrtmgp/rte/mo_source_functions.F90.o
+[ 48%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/cires_ugwp_module.F90.o
+[ 49%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/radiation_clouds.f.o
+[ 49%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/GFS_rrtmgp_setup.F90.o
+[ 49%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/rte-rrtmgp/rte/mo_fluxes.F90.o
+[ 50%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/cldmacro.F.o
+[ 50%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/cldwat2m_micro.F.o
+[ 50%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/mo_cloud_sampling.F90.o
+[ 50%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/rte-rrtmgp/extensions/cloud_optics/mo_cloud_optics.F90.o
+[ 50%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/module_nst_model.f90.o
+[ 50%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/radlw_main.f.o
+[ 51%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/radsw_main.f.o
+[ 51%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/cu_gf_driver.F90.o
+[ 51%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/rte-rrtmgp/rte/mo_rte_lw.F90.o
+[ 51%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/rte-rrtmgp/rte/mo_rte_sw.F90.o
+[ 51%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/rte-rrtmgp/extensions/mo_fluxes_bygpoint.F90.o
+[ 51%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/ugwp_driver_v0.F.o
+[ 51%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/cires_ugwp_solvers.F90.o
+[ 51%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/cires_vert_lsatdis.F90.o
+[ 51%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/cires_vert_orodis.F90.o
+[ 51%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/cires_vert_wmsdis.F90.o
+[ 52%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/rte-rrtmgp/rrtmgp/mo_gas_optics.F90.o
+[ 52%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/cires_ugwp.F90.o
+[ 52%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/rte-rrtmgp/extensions/mo_fluxes_byband.F90.o
+[ 52%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/GFS_rrtmgp_zhaocarr_pre.F90.o
+[ 52%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/module_SGSCloud_RadPre.F90.o
+[ 52%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/sfc_nst.f.o
+[ 52%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/GFS_rrtmgp_gfdlmp_pre.F90.o
+[ 53%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/m_micro.F90.o
+[ 53%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/rte-rrtmgp/extensions/mo_compute_bc.F90.o
+[ 53%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/rte-rrtmgp/extensions/mo_rrtmgp_clr_all_sky.F90.o
+[ 53%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/rte-rrtmgp/rrtmgp/mo_gas_optics_rrtmgp.F90.o
+[ 53%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/GFS_rrtmg_setup.F90.o
+[ 54%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/rrtmgp_lw_aerosol_optics.F90.o
+[ 55%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/GFS_rrtmgp_sw_post.F90.o
+[ 55%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/GFS_rrtmgp_sw_pre.F90.o
+[ 55%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/GFS_rrtmgp_lw_post.F90.o
+[ 55%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/GFS_rrtmgp_pre.F90.o
+[ 55%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/__/__/gfsphysics/GFS_layer/GFS_typedefs.F90.o
+[ 55%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/rrtmgp_lw_cloud_optics.F90.o
+[ 55%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/rrtmgp_lw_cloud_sampling.F90.o
+[ 55%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/rrtmgp_lw_gas_optics.F90.o
+[ 55%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/rrtmgp_lw_rte.F90.o
+[ 55%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/rrtmgp_sw_aerosol_optics.F90.o
+[ 55%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/rrtmgp_sw_cloud_optics.F90.o
+[ 55%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/rrtmgp_sw_cloud_sampling.F90.o
+[ 56%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/rrtmgp_sw_gas_optics.F90.o
+[ 56%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/rrtmgp_sw_rte.F90.o
+[ 56%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/rrtmg_lw_pre.F90.o
+[ 57%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/GFS_rrtmg_pre.F90.o
+[ 58%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/rrtmg_sw_post.F90.o
+[ 58%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/rrtmg_lw_post.F90.o
+[ 58%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/GFS_suite_interstitial.F90.o
+[ 58%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/GFS_rrtmg_post.F90.o
+[ 58%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/rrtmg_sw_pre.F90.o
+[ 59%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/ccpp_FV3_GFS_2017_stochastics_cap.F90.o
+[ 59%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/GFS_phys_time_vary.fv3.F90.o
+[ 59%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/GFS_rad_time_vary.fv3.F90.o
+[ 60%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/GFS_debug.F90.o
+[ 60%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/rrtmgp_lw_pre.F90.o
+[ 60%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/physics/gcycle.F90.o
+[ 60%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/ccpp_FV3_GFS_2017_physics_cap.F90.o
+[ 60%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/ccpp_FV3_GFS_2017_time_vary_cap.F90.o
+[ 60%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/ccpp_FV3_GFS_2017_radiation_cap.F90.o
+[ 61%] Building Fortran object FV3/ccpp/physics/CMakeFiles/ccppphys.dir/ccpp_FV3_GFS_2017_cap.F90.o
+[ 61%] Linking Fortran static library libccppphys.a
+[ 61%] Built target ccppphys
+Scanning dependencies of target gfsphysics
+[ 61%] Building Fortran object FV3/gfsphysics/CMakeFiles/gfsphysics.dir/CCPP_layer/CCPP_data.F90.o
+[ 61%] Building Fortran object FV3/gfsphysics/CMakeFiles/gfsphysics.dir/physics/mersenne_twister.f.o
+[ 62%] Building Fortran object FV3/gfsphysics/CMakeFiles/gfsphysics.dir/physics/physcons.F90.o
+[ 62%] Building Fortran object FV3/gfsphysics/CMakeFiles/gfsphysics.dir/physics/noahmp_tables.f90.o
+[ 62%] Building Fortran object FV3/gfsphysics/CMakeFiles/gfsphysics.dir/physics/namelist_soilveg.f.o
+[ 62%] Building Fortran object FV3/gfsphysics/CMakeFiles/gfsphysics.dir/GFS_layer/GFS_diagnostics.F90.o
+[ 62%] Building Fortran object FV3/gfsphysics/CMakeFiles/gfsphysics.dir/physics/GFDL_parse_tracers.F90.o
+[ 63%] Building Fortran object FV3/gfsphysics/CMakeFiles/gfsphysics.dir/physics/physparam.f.o
+[ 63%] Building Fortran object FV3/gfsphysics/CMakeFiles/gfsphysics.dir/physics/set_soilveg.f.o
+[ 64%] Building Fortran object FV3/gfsphysics/CMakeFiles/gfsphysics.dir/GFS_layer/GFS_driver.F90.o
+[ 64%] Building Fortran object FV3/gfsphysics/CMakeFiles/gfsphysics.dir/__/ccpp/physics/ccpp_static_api.F90.o
+[ 64%] Building Fortran object FV3/gfsphysics/CMakeFiles/gfsphysics.dir/GFS_layer/GFS_restart.F90.o
+[ 64%] Building Fortran object FV3/gfsphysics/CMakeFiles/gfsphysics.dir/GFS_layer/GFS_abstraction_layer.F90.o
+[ 64%] Linking Fortran static library libgfsphysics.a
+[ 64%] Built target gfsphysics
+Scanning dependencies of target ipd
+Scanning dependencies of target ccppdriver
+[ 64%] Building Fortran object FV3/ipd/CMakeFiles/ipd.dir/IPD_typedefs.F90.o
+[ 64%] Building Fortran object FV3/ccpp/driver/CMakeFiles/ccppdriver.dir/CCPP_driver.F90.o
+[ 65%] Building Fortran object FV3/ipd/CMakeFiles/ipd.dir/IPD_driver.F90.o
+[ 65%] Linking Fortran static library libccppdriver.a
+[ 65%] Built target ccppdriver
+[ 65%] Linking Fortran static library libipd.a
+[ 65%] Built target ipd
+[ 65%] Building Fortran object CMakeFiles/fms.dir/FMS/drifters/drifters_comm.F90.o
+[ 65%] Building Fortran object CMakeFiles/fms.dir/FMS/mpp/mpp_io.F90.o
+[ 65%] Building Fortran object CMakeFiles/fms.dir/FMS/block_control/block_control.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 65%] Building Fortran object CMakeFiles/fms.dir/FMS/drifters/drifters.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 65%] Building Fortran object CMakeFiles/fms.dir/FMS/memutils/memutils.F90.o
+[ 65%] Building Fortran object CMakeFiles/fms.dir/FMS/fms/fms_io.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 65%] Building Fortran object CMakeFiles/fms.dir/FMS/fms/fms.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 65%] Building Fortran object CMakeFiles/fms.dir/FMS/horiz_interp/horiz_interp_spherical.F90.o
+[ 65%] Building Fortran object CMakeFiles/fms.dir/FMS/horiz_interp/horiz_interp_conserve.F90.o
+[ 66%] Building Fortran object CMakeFiles/fms.dir/FMS/horiz_interp/horiz_interp_bicubic.F90.o
+[ 67%] Building Fortran object CMakeFiles/fms.dir/FMS/field_manager/field_manager.F90.o
+[ 67%] Building Fortran object CMakeFiles/fms.dir/FMS/horiz_interp/horiz_interp_bilinear.F90.o
+[ 68%] Building Fortran object CMakeFiles/fms.dir/FMS/diag_manager/diag_grid.F90.o
+[ 69%] Building Fortran object CMakeFiles/fms.dir/FMS/time_manager/time_manager.F90.o
+[ 69%] Building Fortran object CMakeFiles/fms.dir/FMS/axis_utils/axis_utils.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 70%] Building Fortran object CMakeFiles/fms.dir/FMS/coupler/ensemble_manager.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 70%] Building Fortran object CMakeFiles/fms.dir/FMS/mosaic/mosaic.F90.o
+[ 70%] Building Fortran object CMakeFiles/fms.dir/FMS/fft/fft.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 70%] Building Fortran object CMakeFiles/fms.dir/FMS/monin_obukhov/monin_obukhov.F90.o
+[ 70%] Building Fortran object CMakeFiles/fms.dir/FMS/sat_vapor_pres/sat_vapor_pres.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 70%] Building Fortran object CMakeFiles/fms.dir/FMS/topography/gaussian_topog.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 70%] Building Fortran object CMakeFiles/fms.dir/FMS/time_interp/time_interp.F90.o
+[ 70%] Building Fortran object CMakeFiles/fms.dir/FMS/astronomy/astronomy.F90.o
+/home/tester/ufs-weather-model/FMS/field_manager/field_manager.F90:1196:0:
+
+ 1196 |       val_name = val_name(2:length-1)
+      | 
+Warning: '__builtin_memmove' reading 128 bytes from a region of size 127 [-Wstringop-overflow=]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 71%] Building Fortran object CMakeFiles/fms.dir/FMS/column_diagnostics/column_diagnostics.F90.o
+[ 71%] Building Fortran object CMakeFiles/fms.dir/FMS/diag_manager/diag_data.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 71%] Building Fortran object CMakeFiles/fms.dir/FMS/mosaic/grid.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 71%] Building Fortran object CMakeFiles/fms.dir/FMS/random_numbers/random_numbers.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 71%] Building Fortran object CMakeFiles/fms.dir/FMS/time_manager/get_cal_time.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 71%] Building Fortran object CMakeFiles/fms.dir/FMS/diag_integral/diag_integral.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 71%] Building Fortran object CMakeFiles/fms.dir/FMS/horiz_interp/horiz_interp.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 71%] Building Fortran object CMakeFiles/fms.dir/FMS/diag_manager/diag_axis.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 71%] Building Fortran object CMakeFiles/fms.dir/FMS/diag_manager/diag_manifest.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 71%] Building Fortran object CMakeFiles/fms.dir/FMS/field_manager/fm_util.F90.o
+[ 71%] Building Fortran object CMakeFiles/fms.dir/FMS/tracer_manager/tracer_manager.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 71%] Building Fortran object CMakeFiles/fms.dir/FMS/diag_manager/diag_output.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 72%] Building Fortran object CMakeFiles/fms.dir/FMS/amip_interp/amip_interp.F90.o
+[ 72%] Building Fortran object CMakeFiles/fms.dir/FMS/topography/topography.F90.o
+[ 72%] Building Fortran object CMakeFiles/fms.dir/FMS/time_interp/time_interp_external.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 72%] Building Fortran object CMakeFiles/fms.dir/FMS/diag_manager/diag_util.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 72%] Building Fortran object CMakeFiles/fms.dir/FMS/data_override/data_override.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 73%] Building Fortran object CMakeFiles/fms.dir/FMS/diag_manager/diag_table.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 73%] Building Fortran object CMakeFiles/fms.dir/FMS/diag_manager/diag_manager.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 73%] Building Fortran object CMakeFiles/fms.dir/FMS/coupler/coupler_types.F90.o
+[ 74%] Building Fortran object CMakeFiles/fms.dir/FMS/exchange/stock_constants.F90.o
+[ 74%] Building Fortran object CMakeFiles/fms.dir/FMS/interpolator/interpolator.F90.o
+[ 75%] Building Fortran object CMakeFiles/fms.dir/FMS/station_data/station_data.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 75%] Building Fortran object CMakeFiles/fms.dir/FMS/exchange/xgrid.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 75%] Building Fortran object CMakeFiles/fms.dir/FMS/coupler/atmos_ocean_fluxes.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 75%] Linking Fortran static library FMS/libfms.a
+[ 75%] Built target fms
+Scanning dependencies of target stochastic_physics
+Scanning dependencies of target io
+[ 75%] Building Fortran object stochastic_physics/CMakeFiles/stochastic_physics.dir/stochy_resol_def.f.o
+[ 76%] Building Fortran object stochastic_physics/CMakeFiles/stochastic_physics.dir/mpi_wrapper.F90.o
+[ 77%] Building Fortran object FV3/io/CMakeFiles/io.dir/FV3GFS_io.F90.o
+[ 77%] Building Fortran object stochastic_physics/CMakeFiles/stochastic_physics.dir/kinddef.F90.o
+[ 77%] Building Fortran object stochastic_physics/CMakeFiles/stochastic_physics.dir/halo_exchange.fv3.F90.o
+[ 78%] Building Fortran object FV3/io/CMakeFiles/io.dir/module_fv3_io_def.F90.o
+[ 78%] Building Fortran object stochastic_physics/CMakeFiles/stochastic_physics.dir/mersenne_twister.F.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 78%] Building Fortran object FV3/io/CMakeFiles/io.dir/module_write_internal_state.F90.o
+Scanning dependencies of target fv3dycore
+[ 78%] Building Fortran object FV3/io/CMakeFiles/io.dir/ffsync.F90.o
+[ 78%] Building Fortran object FV3/CMakeFiles/fv3dycore.dir/atmos_cubed_sphere/driver/fvGFS/DYCORE_typedefs.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 78%] Building Fortran object FV3/CMakeFiles/fv3dycore.dir/atmos_cubed_sphere/model/fv_arrays.F90.o
+[ 79%] Building Fortran object FV3/CMakeFiles/fv3dycore.dir/atmos_cubed_sphere/tools/external_sst.F90.o
+[ 80%] Building Fortran object FV3/CMakeFiles/fv3dycore.dir/atmos_cubed_sphere/model/fv_fill.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 80%] Building Fortran object stochastic_physics/CMakeFiles/stochastic_physics.dir/plumes.f90.o
+[ 80%] Building Fortran object stochastic_physics/CMakeFiles/stochastic_physics.dir/num_parthds_stochy.f.o
+[ 81%] Building Fortran object FV3/CMakeFiles/fv3dycore.dir/atmos_cubed_sphere/tools/sim_nc_mod.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 81%] Building Fortran object FV3/io/CMakeFiles/io.dir/module_write_nemsio.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 81%] Building Fortran object FV3/io/CMakeFiles/io.dir/module_write_netcdf.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 81%] Building Fortran object stochastic_physics/CMakeFiles/stochastic_physics.dir/stochy_namelist_def.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 81%] Building Fortran object stochastic_physics/CMakeFiles/stochastic_physics.dir/spectral_layout.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 81%] Building Fortran object stochastic_physics/CMakeFiles/stochastic_physics.dir/stochy_gg_def.f.o
+[ 81%] Building Fortran object FV3/io/CMakeFiles/io.dir/module_write_netcdf_parallel.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 82%] Building Fortran object stochastic_physics/CMakeFiles/stochastic_physics.dir/stochy_layout_lag.f.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 82%] Building Fortran object stochastic_physics/CMakeFiles/stochastic_physics.dir/glats_stochy.f.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 82%] Building Fortran object stochastic_physics/CMakeFiles/stochastic_physics.dir/update_ca.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 83%] Building Fortran object stochastic_physics/CMakeFiles/stochastic_physics.dir/gozrineo_stochy.f.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 83%] Building Fortran object stochastic_physics/CMakeFiles/stochastic_physics.dir/pln2eo_stochy.f.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 84%] Building Fortran object stochastic_physics/CMakeFiles/stochastic_physics.dir/setlats_a_stochy.f.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 84%] Building Fortran object stochastic_physics/CMakeFiles/stochastic_physics.dir/stochy_internal_state_mod.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 85%] Building Fortran object stochastic_physics/CMakeFiles/stochastic_physics.dir/stochy_patterngenerator.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 85%] Building Fortran object stochastic_physics/CMakeFiles/stochastic_physics.dir/sumfln_stochy.f.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 85%] Building Fortran object FV3/io/CMakeFiles/io.dir/post_gfs_stub.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 85%] Building Fortran object stochastic_physics/CMakeFiles/stochastic_physics.dir/compns_stochy.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 85%] Building Fortran object stochastic_physics/CMakeFiles/stochastic_physics.dir/dezouv_stochy.f.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 86%] Building Fortran object stochastic_physics/CMakeFiles/stochastic_physics.dir/dozeuv_stochy.f.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 86%] Building Fortran object stochastic_physics/CMakeFiles/stochastic_physics.dir/epslon_stochy.f.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 86%] Building Fortran object stochastic_physics/CMakeFiles/stochastic_physics.dir/four_to_grid_stochy.F.o
+[ 86%] Building Fortran object stochastic_physics/CMakeFiles/stochastic_physics.dir/get_lats_node_a_stochy.f.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 86%] Building Fortran object stochastic_physics/CMakeFiles/stochastic_physics.dir/get_ls_node_stochy.f.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 86%] Building Fortran object stochastic_physics/CMakeFiles/stochastic_physics.dir/setlats_lag_stochy.f.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 87%] Building Fortran object stochastic_physics/CMakeFiles/stochastic_physics.dir/cellular_automata_global.F90.o
+[ 87%] Building Fortran object stochastic_physics/CMakeFiles/stochastic_physics.dir/cellular_automata_sgs.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 88%] Building Fortran object stochastic_physics/CMakeFiles/stochastic_physics.dir/getcon_spectral.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 88%] Building Fortran object stochastic_physics/CMakeFiles/stochastic_physics.dir/getcon_lag_stochy.f.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 88%] Building Fortran object FV3/io/CMakeFiles/io.dir/module_wrt_grid_comp.F90.o
+[ 88%] Building Fortran object stochastic_physics/CMakeFiles/stochastic_physics.dir/initialize_spectral_mod.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 88%] Building Fortran object stochastic_physics/CMakeFiles/stochastic_physics.dir/stochy_data_mod.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 88%] Building Fortran object stochastic_physics/CMakeFiles/stochastic_physics.dir/get_stochy_pattern.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+/home/tester/ufs-weather-model/stochastic_physics/get_stochy_pattern.F90:323:110:
+
+  323 |        upattern_3d(blk,:,k) = skeb_vwts(k,1)*skebu_save(blk,:,skeb_vpts(k,1))+skeb_vwts(k,2)*skebu_save(blk,:,skeb_vpts(k,2))
+      |                                                                                                              1
+Warning: Legacy Extension: REAL array index at (1)
+/home/tester/ufs-weather-model/stochastic_physics/get_stochy_pattern.F90:323:62:
+
+  323 |        upattern_3d(blk,:,k) = skeb_vwts(k,1)*skebu_save(blk,:,skeb_vpts(k,1))+skeb_vwts(k,2)*skebu_save(blk,:,skeb_vpts(k,2))
+      |                                                              1
+Warning: Legacy Extension: REAL array index at (1)
+/home/tester/ufs-weather-model/stochastic_physics/get_stochy_pattern.F90:324:110:
+
+  324 |        vpattern_3d(blk,:,k) = skeb_vwts(k,1)*skebv_save(blk,:,skeb_vpts(k,1))+skeb_vwts(k,2)*skebv_save(blk,:,skeb_vpts(k,2))
+      |                                                                                                              1
+Warning: Legacy Extension: REAL array index at (1)
+/home/tester/ufs-weather-model/stochastic_physics/get_stochy_pattern.F90:324:62:
+
+  324 |        vpattern_3d(blk,:,k) = skeb_vwts(k,1)*skebv_save(blk,:,skeb_vpts(k,1))+skeb_vwts(k,2)*skebv_save(blk,:,skeb_vpts(k,2))
+      |                                                              1
+Warning: Legacy Extension: REAL array index at (1)
+[ 88%] Building Fortran object stochastic_physics/CMakeFiles/stochastic_physics.dir/stochastic_physics.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 88%] Linking Fortran static library libstochastic_physics.a
+[ 88%] Built target stochastic_physics
+[ 88%] Building Fortran object FV3/CMakeFiles/fv3dycore.dir/atmos_cubed_sphere/tools/fv_mp_mod.F90.o
+[ 88%] Building Fortran object FV3/CMakeFiles/fv3dycore.dir/atmos_cubed_sphere/tools/sorted_index.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 88%] Building Fortran object FV3/CMakeFiles/fv3dycore.dir/atmos_cubed_sphere/tools/fv_eta.F90.o
+[ 88%] Building Fortran object FV3/CMakeFiles/fv3dycore.dir/atmos_cubed_sphere/model/multi_gases.F90.o
+[ 88%] Building Fortran object FV3/CMakeFiles/fv3dycore.dir/atmos_cubed_sphere/model/fv_sg.F90.o
+[ 88%] Building Fortran object FV3/CMakeFiles/fv3dycore.dir/atmos_cubed_sphere/tools/fv_timing.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+/home/tester/ufs-weather-model/FV3/atmos_cubed_sphere/tools/fv_eta.h:945:0:
+
+  945 | #endif _FV_ETA_
+      | 
+Warning: extra tokens at end of #endif directive
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+/home/tester/ufs-weather-model/FV3/atmos_cubed_sphere/tools/fv_eta.F90:816:16:
+
+  816 |       do k=km-1, km-k_inc, -1
+      |                1
+Warning: Deleted feature: End expression in DO loop at (1) must be integer
+/home/tester/ufs-weather-model/FV3/atmos_cubed_sphere/tools/fv_eta.F90:820:12:
+
+  820 |       s_fac(km-k_inc-1) = 0.5*(s_fac(km-k_inc) + s_rate)
+      |            1
+Warning: Legacy Extension: REAL array index at (1)
+/home/tester/ufs-weather-model/FV3/atmos_cubed_sphere/tools/fv_eta.F90:820:37:
+
+  820 |       s_fac(km-k_inc-1) = 0.5*(s_fac(km-k_inc) + s_rate)
+      |                                     1
+Warning: Legacy Extension: REAL array index at (1)
+/home/tester/ufs-weather-model/FV3/atmos_cubed_sphere/tools/fv_eta.F90:822:11:
+
+  822 |       do k=km-k_inc-2, 5, -1
+      |           1
+Warning: Deleted feature: Start expression in DO loop at (1) must be integer
+[ 88%] Linking Fortran static library libio.a
+[ 89%] Building Fortran object FV3/CMakeFiles/fv3dycore.dir/atmos_cubed_sphere/model/boundary.F90.o
+[ 89%] Built target io
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 89%] Building Fortran object FV3/CMakeFiles/fv3dycore.dir/atmos_cubed_sphere/model/fv_grid_utils.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 89%] Building Fortran object FV3/CMakeFiles/fv3dycore.dir/atmos_cubed_sphere/tools/fv_grid_tools.F90.o
+[ 90%] Building Fortran object FV3/CMakeFiles/fv3dycore.dir/atmos_cubed_sphere/model/tp_core.F90.o
+[ 90%] Building Fortran object FV3/CMakeFiles/fv3dycore.dir/atmos_cubed_sphere/tools/fv_surf_map.F90.o
+[ 90%] Building Fortran object FV3/CMakeFiles/fv3dycore.dir/atmos_cubed_sphere/model/a2b_edge.F90.o
+[ 90%] Building Fortran object FV3/CMakeFiles/fv3dycore.dir/atmos_cubed_sphere/tools/init_hydro.F90.o
+[ 90%] Building Fortran object FV3/CMakeFiles/fv3dycore.dir/atmos_cubed_sphere/model/fv_mapz.F90.o
+[ 90%] Building Fortran object FV3/CMakeFiles/fv3dycore.dir/atmos_cubed_sphere/tools/fv_treat_da_inc.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 90%] Building Fortran object FV3/CMakeFiles/fv3dycore.dir/atmos_cubed_sphere/tools/fv_iau_mod.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+/home/tester/ufs-weather-model/FV3/atmos_cubed_sphere/tools/fv_iau_mod.F90:357:46:
+
+  357 |             iau_state%hr2=IPD_Control%iaufhrs(t2)
+      |                                              1
+Warning: Legacy Extension: REAL array index at (1)
+/home/tester/ufs-weather-model/FV3/atmos_cubed_sphere/tools/fv_iau_mod.F90:359:98:
+
+  359 |             if (is_master()) print *,'reading next increment file',trim(IPD_Control%iau_inc_files(t2))
+      |                                                                                                  1
+Warning: Legacy Extension: REAL array index at (1)
+/home/tester/ufs-weather-model/FV3/atmos_cubed_sphere/tools/fv_iau_mod.F90:360:102:
+
+  360 |             call read_iau_forcing(IPD_Control,iau_state%inc2,'INPUT/'//trim(IPD_Control%iau_inc_files(t2)))
+      |                                                                                                      1
+Warning: Legacy Extension: REAL array index at (1)
+[ 90%] Building Fortran object FV3/CMakeFiles/fv3dycore.dir/atmos_cubed_sphere/model/sw_core.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 91%] Building Fortran object FV3/CMakeFiles/fv3dycore.dir/atmos_cubed_sphere/tools/fv_io.F90.o
+[ 91%] Building Fortran object FV3/CMakeFiles/fv3dycore.dir/atmos_cubed_sphere/tools/fv_diagnostics.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+/home/tester/ufs-weather-model/FV3/atmos_cubed_sphere/tools/fv_diagnostics.F90:4922:19:
+
+ 4922 |       do 500 i=1,im
+      |                   1
+Warning: Fortran 2018 deleted feature: Shared DO termination label 500 at (1)
+/home/tester/ufs-weather-model/FV3/atmos_cubed_sphere/tools/fv_diagnostics.F90:4923:39:
+
+ 4923 | 500   a6(i,k) = delp(i,k-1) + delp(i,k)
+      |                                       1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 500 at (1)
+/home/tester/ufs-weather-model/FV3/atmos_cubed_sphere/tools/fv_diagnostics.F90:4926:20:
+
+ 4926 |       do 1000 i=1,im
+      |                    1
+Warning: Fortran 2018 deleted feature: Shared DO termination label 1000 at (1)
+/home/tester/ufs-weather-model/FV3/atmos_cubed_sphere/tools/fv_diagnostics.F90:4931:20:
+
+ 4931 |       do 1220 i=1,im
+      |                    1
+Warning: Fortran 2018 deleted feature: Shared DO termination label 1220 at (1)
+[ 91%] Building Fortran object FV3/CMakeFiles/fv3dycore.dir/atmos_cubed_sphere/model/nh_utils.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 91%] Building Fortran object FV3/CMakeFiles/fv3dycore.dir/atmos_cubed_sphere/model/nh_core.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 91%] Building Fortran object FV3/CMakeFiles/fv3dycore.dir/atmos_cubed_sphere/tools/fv_nudge.F90.o
+[ 92%] Building Fortran object FV3/CMakeFiles/fv3dycore.dir/atmos_cubed_sphere/model/fv_regional_bc.F90.o
+[ 93%] Building Fortran object FV3/CMakeFiles/fv3dycore.dir/atmos_cubed_sphere/driver/fvGFS/fv_nggps_diag.F90.o
+[ 93%] Building Fortran object FV3/CMakeFiles/fv3dycore.dir/atmos_cubed_sphere/tools/test_cases.F90.o
+[ 93%] Building Fortran object FV3/CMakeFiles/fv3dycore.dir/atmos_cubed_sphere/model/fv_nesting.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+/home/tester/ufs-weather-model/FV3/atmos_cubed_sphere/tools/fv_nudge.F90:863:44:
+
+  863 | 666   ps_dt(i,j) = pst**(1./kappa) - ps(i,j)
+      |                                            1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 666 at (1)
+/home/tester/ufs-weather-model/FV3/atmos_cubed_sphere/tools/fv_nudge.F90:2360:3:
+
+ 2360 | 123   continue
+      |   1
+......
+ 2412 |          if ( r_vor < 1250.E3 ) goto 123
+      |                                        2
+Warning: Legacy Extension: Label at (1) is not in the same block as the GOTO statement at (2)
+[ 93%] Building Fortran object FV3/CMakeFiles/fv3dycore.dir/atmos_cubed_sphere/model/fv_update_phys.F90.o
+[ 93%] Building Fortran object FV3/CMakeFiles/fv3dycore.dir/atmos_cubed_sphere/model/dyn_core.F90.o
+[ 93%] Building Fortran object FV3/CMakeFiles/fv3dycore.dir/atmos_cubed_sphere/model/fv_tracer2d.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+/home/tester/ufs-weather-model/FV3/atmos_cubed_sphere/model/dyn_core.F90:673:0:
+
+  673 | #endif SW_DYNAMICS
+      | 
+Warning: extra tokens at end of #endif directive
+/home/tester/ufs-weather-model/FV3/atmos_cubed_sphere/model/dyn_core.F90:1125:0:
+
+ 1125 | #endif SW_DYNAMICS
+      | 
+Warning: extra tokens at end of #endif directive
+/home/tester/ufs-weather-model/FV3/atmos_cubed_sphere/model/dyn_core.F90:1311:0:
+
+ 1311 | #endif SW_DYNAMICS
+      | 
+Warning: extra tokens at end of #endif directive
+/home/tester/ufs-weather-model/FV3/atmos_cubed_sphere/model/dyn_core.F90:1332:0:
+
+ 1332 | #endif SW_DYNAMICS
+      | 
+Warning: extra tokens at end of #endif directive
+[ 93%] Building Fortran object FV3/CMakeFiles/fv3dycore.dir/atmos_cubed_sphere/tools/external_ic.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 93%] Building Fortran object FV3/CMakeFiles/fv3dycore.dir/atmos_cubed_sphere/model/fv_dynamics.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 94%] Building Fortran object FV3/CMakeFiles/fv3dycore.dir/atmos_cubed_sphere/tools/fv_restart.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 94%] Building Fortran object FV3/CMakeFiles/fv3dycore.dir/atmos_cubed_sphere/model/fv_control.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 94%] Building Fortran object FV3/CMakeFiles/fv3dycore.dir/atmos_cubed_sphere/driver/fvGFS/atmosphere.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 94%] Linking Fortran static library libfv3dycore.a
+[ 94%] Built target fv3dycore
+Scanning dependencies of target stochastic_physics_wrapper
+[ 95%] Building Fortran object FV3/stochastic_physics/CMakeFiles/stochastic_physics_wrapper.dir/stochastic_physics_wrapper.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 95%] Linking Fortran static library libstochastic_physics_wrapper.a
+[ 95%] Built target stochastic_physics_wrapper
+Scanning dependencies of target fv3atm
+[ 95%] Building Fortran object FV3/CMakeFiles/fv3atm.dir/module_fv3_config.F90.o
+[ 96%] Building Fortran object FV3/CMakeFiles/fv3atm.dir/time_utils.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 97%] Building Fortran object FV3/CMakeFiles/fv3atm.dir/atmos_model.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 97%] Building Fortran object FV3/CMakeFiles/fv3atm.dir/module_fcst_grid_comp.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 97%] Building Fortran object FV3/CMakeFiles/fv3atm.dir/fv3_cap.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 97%] Linking Fortran static library libfv3atm.a
+[ 97%] Built target fv3atm
+Scanning dependencies of target ufs-weather-model-lib
+[ 97%] Building Fortran object CMakeFiles/ufs-weather-model-lib.dir/NEMS/src/ENS_Cpl/ENS_CplComp_ESMFMod_STUB.F90.o
+[ 98%] Building Fortran object CMakeFiles/ufs-weather-model-lib.dir/NEMS/src/module_MEDIATOR_SpaceWeather.F90.o
+[ 98%] Building Fortran object CMakeFiles/ufs-weather-model-lib.dir/NEMS/src/module_NEMS_UTILS.F90.o
+[ 98%] Building C object CMakeFiles/ufs-weather-model-lib.dir/NEMS/src/nems_c_rusage.c.o
+[ 98%] Building Fortran object CMakeFiles/ufs-weather-model-lib.dir/NEMS/src/module_EARTH_INTERNAL_STATE.F90.o
+[ 98%] Building Fortran object CMakeFiles/ufs-weather-model-lib.dir/NEMS/src/module_MEDIATOR_methods.F90.o
+[ 98%] Building Fortran object CMakeFiles/ufs-weather-model-lib.dir/NEMS/src/module_NEMS_INTERNAL_STATE.F90.o
+[ 98%] Building Fortran object CMakeFiles/ufs-weather-model-lib.dir/NEMS/src/module_NEMS_Rusage.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 98%] Building Fortran object CMakeFiles/ufs-weather-model-lib.dir/NEMS/src/module_MEDIATOR.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 98%] Building Fortran object CMakeFiles/ufs-weather-model-lib.dir/NEMS/src/module_EARTH_GRID_COMP.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[ 99%] Building Fortran object CMakeFiles/ufs-weather-model-lib.dir/NEMS/src/module_NEMS_GRID_COMP.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[100%] Linking Fortran static library libufs-weather-model-lib.a
+[100%] Built target ufs-weather-model-lib
+Scanning dependencies of target NEMS.exe
+[100%] Building Fortran object CMakeFiles/NEMS.exe.dir/NEMS/src/MAIN_NEMS.F90.o
+f951: Warning: Nonexistent include directory '/home/tester/ufs-weather-model/FMS/fms2_io/include' [-Wmissing-include-dirs]
+[100%] Linking Fortran executable NEMS.exe
+[100%] Built target NEMS.exe
++ mv NEMS.exe /home/tester/ufs-weather-model/tests/fv3_std.exe
++ cp /home/tester/ufs-weather-model/modulefiles/linux.gnu/fv3 /home/tester/ufs-weather-model/tests/modules.fv3_std
++ cd ..
++ '[' YES = YES ']'
++ rm -rf /home/tester/ufs-weather-model/tests/build_fv3_std
++ elapsed=195
++ echo 'Elapsed time 195 seconds. Compiling CCPP=Y SUITES=FV3_GFS_2017 finished'
+Elapsed time 195 seconds. Compiling CCPP=Y SUITES=FV3_GFS_2017 finished
